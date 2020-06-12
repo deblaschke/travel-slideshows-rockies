@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <base href="..">
+    <title>2019 Summer Vacation</title>
+    <link type="text/css" rel="stylesheet" href="css/slideshow.css"></link>
+    <script src="js/slideshow.js"></script>
+    <script src="js/description.js"></script>
+  </head>
+  <body background="images/background.jpg" bgcolor="#FFFFFF" text="#000000">
+    <center>
+      <table id="outerTable">
+        <tr>
+          <td>
+            <font size="+2"><b>2019 Summer Vacation</b></font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table id="innerTable"><tr><td>
+              <img class="tripPix" src="2019Trip/title.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/498_M1070300-Sacred_Dancing_Cascade_in_Glacier_National_Park.jpg" style="height:95%;">
+              <img class="tripPix" src="2019Trip/499_M1070321-Pollock_Mountain_and_Mt_Oberlin_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/500_M1070357-Haystack_Creek_Falls_in_Glacier_National_Park.jpg" style="height:95%;">
+              <img class="tripPix" src="2019Trip/501_M1070367-Going-to-the-Sun_Road_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/502_M1070396-Logan_Pass_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/503_M1070410-Pollock_Mountain_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/504_M1070426-Logan_Pass_in_Glacier_National_Park.jpg" style="height:95%;">
+              <img class="tripPix" src="2019Trip/505_M1070429-Logan_Pass_in_Glacier_National_Park.jpg" style="height:95%;">
+              <img class="tripPix" src="2019Trip/506_M1070456-Going-to-the-Sun_Road_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="2019Trip/507_M1070523-Saint_Mary_Lake_and_Red_Eagle_Mountain_in_Glacier_National_Park.jpg" style="width:95%;">
+              <img class="tripPix" src="images/theend1.jpg" style="width:95%;">
+              <img class="tripPix" src="images/theend2.jpg" style="width:95%;">
+            </td></tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="changePic(-1)" title="Previous slide"><b>&#10094;</b></button>
+            <button onclick="toggleFlow(this)" id="buttonPlayPause" title="Play/pause">&#10074;&#10074;</button>
+            <button onclick="changePic(1)" title="Next slide"><b>&#10095;</b></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><span id="slideName"></span></b>
+          </td>
+        </tr>
+      </table>
+      <script type="text/javascript">
+        if (MANUAL_SLIDESHOW) {
+          hidePlayButton();
+          slideIndex = 1;
+          showPic(slideIndex);
+        } else {
+          slideIndex = 0;
+          slideshow();
+        }
+      </script>
+    </center>
+  </body>
+</html>
